@@ -1,0 +1,1091 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* .example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+} */
+@font-face {
+    font-family:kuch to hai ;
+    src: url(./fonts/SomethingStrange-vjYD.ttf);
+    
+}
+
+@font-face{
+    src: url(./fonts/./CyberwarRegular-7BX0E.ttf);
+    font-family: cyberway riders;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Gilroy-Black.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/./Gilroy-BlackItalic.ttf)
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/./Gilroy-Bold.ttf)
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/./Gilroy-BoldItalic.ttf)
+} 
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/./Gilroy-ExtraBoldItalic.ttf)
+} 
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/./Gilroy-Heavy.ttf)
+} 
+
+*{
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main::-webkit-scrollbar{
+    scroll-behavior: none;
+    display: none;
+}
+
+#main{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(229, 227, 227);
+}
+
+#nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    position: fixed;
+    padding: 2vw 5vw;
+    z-index: 99;
+    color: tomato;
+    width: 100%;
+    font-size: 2vw;
+    /* background-color: wheat; */
+}
+
+#nav #gif{
+    position: absolute;
+    left: 48%;
+    width: 4vw;
+    opacity: 0;
+}
+
+#nav img{
+    width: 3vw;
+    border-radius: 50%;
+}
+
+#nav a{
+    font-family:kuch to hai;
+    /* color: #fff; */
+    color: tomato;
+    text-decoration: none;
+    z-index: 99;
+}
+
+.hover{
+    width: 25%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    border-radius: 50px;
+    opacity: 0;
+    left: 0%;
+    top: 0%;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1).6s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1).6s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).6s;
+}
+
+
+#atag{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .8vw 1.5vw;
+    border-radius: 50px;
+    width: 30vw;
+    height: 80%;
+    border:  solid #000 2px;
+    overflow: hidden;
+    z-index: 999;
+    /* background-color:#000; */
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#one img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+#one .center{
+    background-image: url(./Untitled\ \(19\ ×\ 8.5in\)\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#maintxt{
+    position: absolute;
+    width: 80vw;
+    height: 60vh;
+    left: 20%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    z-index: 99999;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    /* background-color: violet; */
+}
+
+#maintxt h1{
+    font-family: Gilroy;
+    font-size: 2vw;
+    color: #FDF3A9;
+    margin-left: 5vw;
+    /* background-color: violet; */
+    -webkit-box-shadow: 0px 0px 12px 0px #000;
+            box-shadow: 0px 0px 12px 0px #000;
+}
+
+#lefttxt{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right: 5%;
+    z-index: 9999;
+    width: 40vw;
+    /* background-color: wheat; */
+    height: 50vh;
+    /* color: #EF3D1E; */
+}
+
+#lefttxt h1{
+    top: 30%;
+    font-size: 5vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: kuch to hai;
+    /* color: #000; */
+}
+
+#lefttxt h1 span{
+    display: inline-block;
+    position: relative;
+}
+
+#lefttxt h3{
+    position: absolute;
+    top: 50%;
+    font-family: kuch to hai;
+    font-size: 3vw;
+}
+
+#two img{
+    width: 100%;
+    /* overflow: hidden !important; */
+}
+
+#two{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.center{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+
+.center video{
+    width: 100%;
+}
+
+#three{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    /* background-color:rgb(0, 0, 0); */
+}
+
+#three img{
+    position: absolute;
+    width: 10vw;
+}
+
+#pumpkin1{
+    top: 10%;
+    right: 10%;
+}
+
+#pumpkin2{
+    top: 13%;
+    right: 15%;
+    -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+}
+
+#three #button{
+    width: 80px;
+    height: 40px;
+    z-index: 999;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    border-radius: 50px;
+    color:#000;
+    cursor: pointer;
+    background-color: red;
+    z-index: 99999;
+}
+
+.boubles{
+    position: absolute;
+    width: 0vw;
+    height: 0vw;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    border: 2px solid tomato;
+    opacity: 0;
+}
+
+h1{
+   font-size: 5vw;
+   font-family: cyberway riders;
+   color: rgb(239, 61, 30); 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%,-50%);
+       -ms-transform: translate(-50%,-50%);
+           transform: translate(-50%,-50%); 
+}
+
+#bl1{
+    position: relative;
+    left: -5%;
+    top: -10%;
+    z-index: 99;
+    white-space: nowrap;
+}
+
+#bl2{
+    /* position: relative; */
+    right: -5%;
+    top: -10%;
+    z-index: 999;
+    white-space: nowrap;
+}
+
+#bl3{
+    left: -5%;
+    bottom: -10%;  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#bl3 p{
+    margin-top: 80px;
+    width: 20vw;
+    font-size: 1.2vw;
+    margin-left: 30px;
+    color: #000;
+}
+
+#bl3 h1{
+    margin-top: -60px;
+    color: #000;
+    font-size: 3vw;
+}
+
+#bl4{
+    right: -5%;
+    bottom: -10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#bl4 p{
+    margin-top: 80px;
+    width: 20vw;
+    font-size: 1.2vw;
+    color: #000;
+}
+
+#bl4 h1{
+    font-family: cyberway riders;
+    font-size: 4vw;
+    /* background-color: #000; */
+    margin-top: -60px;
+    color: #000;
+}
+
+#four{
+    height: 100vh;
+    position: relative;
+    /* background-color:#fff */
+}
+
+#four #left{
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33vw;
+    height: 100vh;
+    z-index: 99;
+    /* background-color: yellow; */
+}
+
+#left #img1{
+    width: 40%;
+    height: 100%;
+    /* background-color: violet; */
+}
+
+#img1 #leleft{
+    margin-top: 10vw;
+    margin-left: -10%;
+    width: 90%;
+    height: 50vh;
+    background-color: thistle;
+    background-image: url(https://r1.ilikewallpaper.net/iphone-14-wallpapers/download-113151/Vertical-Halloween-Cave.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#left #img2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3vw;
+    width: 60%;
+    height: 100%;
+    /* background-color: turquoise; */
+}
+
+#img2 #ltop{
+    width: 90%;
+    height: 40vh;
+    border-radius: 20px;
+    background-image: url(https://cdn.wallpapersafari.com/61/84/k1pB5F.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#img2 #lbottom{
+    width: 90%;
+    height: 30vh;
+    border-radius: 20px;
+    background-image: url(http://www.fun-lover.com/shares/halloween2/full/halloween-2013-022.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#four #right{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    right: 0%;
+    width: 33vw;
+    height: 100vh;
+    /* background-color:#ff0000; */
+}
+
+#right #rimg1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3vw;
+    width: 45vh;
+    height: 100vh;
+}
+
+#rimg1 #rtop{
+    border-radius: 20px;
+    width: 90%;
+    height: 30vh;
+    background-image: url(https://us.123rf.com/450wm/jickaro/jickaro2209/jickaro220900216/jickaro220900216.jpg?ver=6);
+    background-position: center;
+    background-size: cover;
+}
+
+#rimg1 #rbottom{
+    border-radius: 20px;
+    width: 90%;
+    height: 40vh;
+    background-image: url(https://4.bp.blogspot.com/--49PvkCq4dk/UmAfXqaLObI/AAAAAAAAJ-o/WJsWohqUisk/s1600/Halloween%252Btextures%252B2013%252B%252813%2529.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#right #rimg2{
+    width: 30vh;
+    height: 100vh;
+    /* background-color:turquoise; */
+}
+
+#rimg2 #rright{
+    margin-left: 20%;
+    margin-top: 10vw;
+    border-radius: 20px;
+    width: 90%;
+    height: 50vh;
+    background-image: url(https://i.pinimg.com/originals/30/25/be/3025bee553ea1a25d2161ffd4ef8d7be.jpg);
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(); */
+}
+
+.images .filter{
+    -webkit-filter:grayscale() ;
+            filter:grayscale() ;
+}
+
+.images .filter:hover{
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+}
+
+#four #img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 99;
+}
+
+#img #imgri{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: violet; */
+}
+
+#imgri video{
+    height: 100%;
+}
+
+#six{
+    position: relative;
+    background-image: url(http://getwallpapers.com/wallpaper/full/5/9/f/1070342-beautiful-helloween-wallpaper-1920x1129-hd.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pumpkin{
+    width: 20%;
+    height: 50vh;
+    position: relative;
+    top: 75%;
+    left: 20%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    /* background-color:#000; */
+}
+
+.cubs{
+    height: 100%;
+    width: 14.283%;
+    /* background-color: rgb(199, 135, 125); */
+}
+
+#tickleinfo{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 30vw;
+    height: 40vh;
+    /* background-color: yellowgreen; */
+}
+
+#tickleinfo h1{
+    font-family: Gilroy;
+    font-size: 1.5vw;
+    color: #000;
+    text-align: center;
+}
+
+.photos{
+    width: 200px;
+    height: 300px;
+    scale: 0;
+    position: absolute;
+    border-radius: 50px;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    /* background-color: violet; */
+}
+
+#photo00{
+    top: 0%;
+    left: 0%;
+}
+
+#photo01{
+    top: 0%;
+    right: 0%;
+}
+
+#photo02{
+    top: 5%;
+    left: 7%;
+}
+
+#photo03{
+    top: 10%;
+    left: 13%;
+}
+
+#photo04{
+   top: 0%;
+   right: 5%;
+}
+
+#photo05{
+   top: 5%;
+   right: 10%;
+}
+
+#photo06{
+  top: 10%;
+  left: 20%;
+}
+
+#photo07{
+    top: 12%;
+    right: 20%;
+}
+
+#photo08{
+    top:25%;
+    left:30%;
+}
+
+#photo09{
+    top: 17%;
+    left: 50%;
+}
+
+#photo10{
+    top: 23%;
+    right: 23%;
+} 
+
+#photo11{
+    top: 25%;
+    right: 25%;
+}
+
+#photo12{
+    top: 50%;
+    right: 25%;
+}
+
+#photo13{
+    top: 30%;
+    right: 50%;
+}
+
+#photo14{
+    top: 35%;
+    right: 12%;
+}
+  
+#photo15{
+    top: 33%;
+    left: 30%;
+}
+ 
+#photo16{
+    top: 40%;
+    right: 20%;
+}
+
+#photo17{
+    top: 45%;
+    right: 10%;
+}
+
+#photo18{
+    top: 55%;
+    left: 30%;
+}
+ 
+#photo19{
+   top: 60%;
+   right: 20%;
+} 
+
+#photo20{
+   top: 70%;
+   right: 25%;
+} 
+
+#photo21{
+   top: 30%;
+   left: 20%;
+}
+
+#photo22{
+    top: 60%;
+   left: 15%;
+}
+
+#photo23{
+   top: 65%;
+   left: 25%;
+}
+
+#photo24{
+    top: 70%;
+    left:30%;
+} 
+
+#photo25{
+    top: 75%;
+    left: 78%;
+} 
+
+#photo26{
+   top: 80%;
+   left: 22%;
+}  
+
+#photo27{
+   top: 85%;
+   left: 50%;
+}
+
+#photo28{
+    top: 90%;
+    left: 40%;
+} 
+
+#photo29{
+    top: 95%;
+    left: 55%;
+} 
+
+#photo30{
+    top: 90%;
+    right: 50%;
+}
+
+#photo31{
+   top: 10%;
+   right: 50%;
+} 
+
+#photo32{
+   top: 6%;
+   right: 40%;
+}
+
+#photo33{
+   top: 3%;
+   right: 65%;
+}
+
+#photo34{
+   top: 10%;
+   right: 60%;
+}
+
+#photo35{
+   top: 80%;
+   right: 40%;
+}  
+
+#seven #headtag{
+   width: 100%;
+   height: 7vw;
+   /* background-color: violet; */
+   position: absolute;
+   top: 2vw;
+}
+
+ #seven #pumpkin3{
+    position: absolute;
+    left: 30%;
+    top: 17%;
+    width: 10vw;
+    -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+}
+
+#seven #pumpkin4{
+   position: absolute;
+   right: 30%;
+   top: 75%;
+   width: 10vw;
+   /* transform: rotate(-30deg); */
+}
+
+#headtag h1{
+    position: absolute;
+    overflow: hidden;
+    font-family: kuch to hai;
+}
+
+#headtag h1 span{
+    overflow: hidden;
+    display: inline-block;
+    /* background-color: #000; */
+}
+
+.info{
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+            transform: translate(0,-50%);
+    width: 28vw;
+    height: 70vh;
+    border: solid tomato 2px;
+    /* background-color: tomato; */
+}
+
+.info span{
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 2px;
+    margin-left: 10%;
+    background-color: tomato;
+}
+
+.info p{
+    margin-top: 5vw;
+    text-align: center;
+    margin-left: 5vw;
+    width: 20vw;
+    font-family: Gilroy;
+}
+
+.info h1{
+    margin-top: 30%;
+    font-size: 1vw;
+    font-family: Gilroy;
+    color: #000;
+}
+
+#something{
+    width: 28vw;
+    height: 70vh;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    border: solid tomato 2px;
+}
+
+#something h1{
+    font-size: 1vw;
+    font-family: Gilroy;
+}
+
+#tickle{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    /* width: 20vw; */
+    /* height: 10vh; */
+    font-size: 10vw;
+}
+
+#tickle h1{ 
+    color: #000;
+    font-weight: 900;
+    font-family: Gilroy;
+    font-size: 3vw;
+    white-space: nowrap;
+}
+
+#eight #about{
+    position: absolute;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 70vw;
+    height: 60vh;
+    border: 2px solid #000;
+    -webkit-box-shadow: inset 0px 0px 12px 0px #fff;
+            box-shadow: inset 0px 0px 12px 0px #fff;
+    /* background-color: violet; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+
+}
+
+#lorem{
+    width: 40vw;
+    height: 15vh;
+    /* background-color: yellowgreen; */
+    font-family: Gilroy;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 1.2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#lorem p{
+    width: 50vw;
+}
+
+#lorem p a{
+    text-decoration: none;
+    color: tomato;
+}
+
+#about>h1{
+    font-size: 3vw;
+    position: absolute;
+    top: 3vw;
+}
+
+#creditcontainer{
+    width: 100%;
+    height: 20vh;
+    /* background-color: violet; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.credit{
+    font-family: Gilroy;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 15vw;
+    height: 80%;
+    padding-left: 3vw;
+    /* background-color: turquoise; */
+}
+
+.icons a{
+    /* margin-top: 30px; */
+    font-size: 22px;
+    color: tomato;
+    text-decoration: none;
+}
+
+#eight #about span{
+    width: 50%;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #000;
+}
+
+#eight h5{
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+#eight h6{
+    font-size: 1vw;
+    font-family: Gilroy;
+    font-weight: 300;
+    margin-top: 1vw;
+}
+
+
+
+ 
+
+
+
+
+
