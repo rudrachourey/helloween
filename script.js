@@ -80,7 +80,7 @@ function navanimation(){
 
 function circleanimation(){
 
-  gsap.to(".boubles",{
+  gsap.from(".boubles",{
     scrollTrigger:{
       scroller:"#main",
       trigger:".boubles",
@@ -88,12 +88,12 @@ function circleanimation(){
       // markers:true,
       scrub:2
     },
-    width:"30vw",
-    height:"30vw",
-    opacity: 1,
+    width:"0%",
+    height:"0%",
+    opacity: 0,
     // ease:"bounce.lnOut"
   })
-  gsap.to("#bl1",{
+  gsap.from("#bl1",{
     scrollTrigger:{
       scroller:"#main",
       trigger:"#bl1",
@@ -101,12 +101,12 @@ function circleanimation(){
       // markers:true,
       scrub:1
     },
-    left:"29%",
-    top:75
+    left:"-29%",
+    top:"-10%"
     // ease:"elastic.lnOut"
   })
   
-  gsap.to("#bl2",{
+  gsap.from("#bl2",{
     scrollTrigger:{
       scroller:"#main",
       trigger:"#bl2",
@@ -114,8 +114,8 @@ function circleanimation(){
       // markers:true,
       scrub:1
     },
-    right:"29%",
-    top:75,
+    right:"-29%",
+    top:"-10%",
     ease: Elastic
   })
 
@@ -343,8 +343,8 @@ let photos=document.querySelectorAll(".photos")
 cubs.forEach(function(elm,index){
   
   elm.addEventListener("mouseover",function(){
-    gsap.to(photos[index],{
-      scale: 1,
+    gsap.from(photos[index],{
+      scale: 0,
       // stagger:1,
       duration:1
     })
