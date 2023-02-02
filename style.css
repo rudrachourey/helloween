@@ -170,10 +170,13 @@ html,body{
     /* height: 100%; */
 }
 
-#one .center{
-    background-image: url(./Untitled\ \(19\ ×\ 8.5in\)\ \(1\).png);
-    background-position: center;
-    background-size: cover;
+#one .center img{
+    position: absolute;
+    /* top: 50%; */
+    height: 100%;
+    /* background-image: url(./Untitled\ \(19\ ×\ 8.5in\)\ \(1\).png); */
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 
 #maintxt{
@@ -325,12 +328,13 @@ html,body{
 
 .boubles{
     position: absolute;
-    width: 0vw;
-    height: 0vw;
+    width:30vw;
+    height: 30vw;
+    top: 75;
     /* background-color: aqua; */
     border-radius: 50%;
     border: 2px solid tomato;
-    opacity: 0;
+    opacity: 1;
 }
 
 h1{
@@ -346,18 +350,18 @@ h1{
 }
 
 #bl1{
-    position: relative;
-    left: -5%;
-    top: -10%;
+    /* position: relative; */
+    left: 30.5%;
+    top: 13%;
     z-index: 99;
     white-space: nowrap;
 }
 
 #bl2{
-    /* position: relative; */
-    right: -5%;
-    top: -10%;
-    z-index: 999;
+    /* position:absolute;    */
+    right: 30%;
+    top: 13%;
+    z-index: 99;
     white-space: nowrap;
 }
 
@@ -489,6 +493,10 @@ h1{
     background-size: cover;
 }
 
+#four #img{
+    position: fixed;
+}
+
 #img2 #lbottom{
     width: 90%;
     height: 30vh;
@@ -617,17 +625,19 @@ h1{
 
 #six{
     position: relative;
-    background-image: url(http://getwallpapers.com/wallpaper/full/5/9/f/1070342-beautiful-helloween-wallpaper-1920x1129-hd.jpg);
-    background-size: cover;
-    background-position: center;
+}
+#six img{ 
+    width: 100%;
+    height: 100%;
 }
 
 #pumpkin{
     width: 20%;
     height: 50vh;
-    position: relative;
+    position: absolute;
     top: 75%;
     left: 20%;
+    z-index: 999999;
     -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
@@ -657,8 +667,8 @@ h1{
 }
 
 .photos{
-    width: 200px;
-    height: 300px;
+    width: 50px;
+    height: 100px;
     scale: 0;
     position: absolute;
     border-radius: 50px;
@@ -675,6 +685,7 @@ h1{
     width: 100%;
     /* background-color: violet; */
 }
+
 
 #photo00{
     top: 0%;
@@ -1081,11 +1092,155 @@ h1{
     margin-top: 1vw;
 }
 
+@media(max-width:500px){
+    #two{
+        position: absolute;
+        top: 35%;
+    }
+    #one .center img{
+        width: 190%;
+        height: 100%;
+    }
+    #maintxt h1{
+        font-size:4vw;
+    }
+    #maintxt{
+        width: 100%;
+    }
 
+    #lefttxt h3{
+        font-size: 5vw;
+    }
 
- 
+    #nav #atag{
+        width: 53%;
+        height: 30px;
+        font-size: 4.5vw;
+    }
 
+    #nav img{
+        width: 35px;
+    }
 
+    #nav i{
+        font-size: 5vw;
+    }
 
+    .boubles{
+        width: 60%;
+        height: 40%;
+    }
+    #bl1{
+        left: 10%;
+    }
 
+    .boubles h1{
+        font-size: 10vw;
+    }
 
+    #bl2{
+        right: 10%;
+    }
+
+    #bl3 h1{
+        font-size: 10vw;
+    }
+    #bl4 h1{
+        font-size: 8vw;
+        white-space: nowrap;
+    }
+    #bl4 p{
+        font-size: 3vw;
+        width: 80%;
+        text-align: center;
+    }
+    #bl3 p{
+        font-size: 3vw;
+        width: 80%;
+        text-align: center;
+    }
+
+    #four #img{
+        margin-left: 3.5%;
+    }   
+
+    .info{
+        top: 30%;
+        width: 90%;
+        height: 40%;
+        /* left: 0%; */
+    }
+
+    .info p{
+        /* position: absolute; */
+        height: 17%;
+        font-size: 3vw;
+        width: 90%;
+    }
+
+    .info h1{
+        top: 30%;
+        font-size: 3vw;
+        width: 90%;
+        text-align: center;
+    }
+
+    #seven #pumpkin3{
+        top: 10%;
+        left: 5%;
+        width: 50px;
+    }
+
+    #seven #pumpkin4{
+        top: 90%;
+        right: 0%;
+        width: 50px;
+    }
+
+    #six #tickleinfo h1{
+        font-size: 3vw;
+        width: 100%;
+    }
+    #six  img{
+        width: 130%;
+    }
+
+    #something{
+        position: relative;
+        width: 90%;
+        height: 40%;
+        top: 55%;
+        left: 7%;
+    }
+
+    #something h1{
+        font-size: 2.5vw;
+        width: 90%;
+        text-align: center;
+    }
+
+    #about #creditcontainer{
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+    .credit{
+        font-size: 3vw;        
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #about h1{
+        margin-top: 10px;
+        font-size: 7vw;
+    }
+
+    #about p{
+        font-size: 2vw;
+        width: 100%;
+    }
+    #about h6{
+        font-size: 2.3vw;
+    }
+}
